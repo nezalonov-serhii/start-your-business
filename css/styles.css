@@ -1,3 +1,107 @@
+:root {
+    --prime-color: #2D2B5C;
+    --titel-color: #1A1930;
+    --button-bgc: #6259EA;
+    --button-color: #fff;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: rgb(119, 94, 94);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    color: var(--prime-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+}
+
+ul {
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1340px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.list {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn,
+.btn-link {
+    color: var(--button-color);
+    padding: 18px 36px;
+    background: var(--button-bgc);
+    border-radius: 5px;
+}
+
+/* header */
+.page-header {
+    padding-top: 36px;
+}
+
+.page-header>.flex {
+    align-items: center;
+    margin-bottom: 136px;
+}
+
+.nav {
+    margin: auto;
+}
+
+.nav a {
+    color: var(--titel-color);
+}
+
+.nav a:not(:last-child) {
+    margin-right: 24px;
+}
+
+.second-title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.4;
+}
+
+/* hero */
+.hero-titel {
+    margin-bottom: 60px;
+
+    width: 767px;
+    font-size: 80px;
+    line-height: 1.1;
+    color: var(--titel-color);
+}
+
+.hero-desc {
+    margin-bottom: 52px;
+}
+
+.btn-hero {
+    display: block;
+    margin-bottom: 150px;
+}
+
+.block {
+
 }

@@ -1,541 +1,504 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Swipe</title>
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="./css/styles.css">
-    </head>
 
-    <body>
-        <header>
-            <a href="./index.html"><img src="./img/swipe-logo.svg" alt="logo"></a>
-            <nav>
-                <a href="">About</a>
-                <a href="">Features</a>
-                <a href="">Pricing</a>
-                <a href="">Team</a>
-                <a href="">FAQ</a>
-                <a href="">Feedback</a>
-                <a href="">Blog</a>
-                <a href="">Contact</a>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swipe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="container flex">
+            <a href="./index.html"><img src="./img/swipe-logo.svg" alt="logo" class="header-logo"></a>
+            <nav class="nav">
+                <a href="" class="nav-link">About</a>
+                <a href="" class="nav-link">Features</a>
+                <a href="" class="nav-link">Pricing</a>
+                <a href="" class="nav-link">Team</a>
+                <a href="" class="nav-link">FAQ</a>
+                <a href="" class="nav-link">Feedback</a>
+                <a href="" class="nav-link">Blog</a>
+                <a href="" class="nav-link">Contact</a>
             </nav>
-            <a href="">Buy now</a>
-            <h1>Accessible way to start your business</h1>
-            <h2>Simple. Customizable. Stylish.</h2>
-            <button type="button">Get demo for free</button>
-            <a href="./">watch full video</a>
-            <ul>
-                <li><a href="">
-                    <svg>
-                        <use></use>
-                    </svg>
-                </a></li>
-                <li><a href="">
-                    <svg>
-                        <use></use>
-                    </svg>
-                </a></li>
-                <li><a href="">
-                    <svg>
-                        <use></use>
-                    </svg>
-                </a></li>
-            </ul>
-        </header>
+            <a href="" class="btn-link">Buy now</a>
+        </div>
 
-        <!-- logo -->
-        <section>
-            <ul>
-                <li>
-                    <svg>
-                        <use></use>
-                    </svg>
+        <!-- hero -->
+        <div class="container">
+            <h1 class="hero-titel">Accessible way to start your business</h1>
+            <h2 class="hero-desc second-title">Simple. Customizable. Stylish.</h2>
+            <button type="button" class="btn-hero btn">Get demo for free</button>
+            <a href="./" class="more">watch full video</a>
+            <ul class="hero-social list">
+                <li class="hero-item">
+                    <a href="">
+                        <svg>
+                            <use></use>
+                        </svg>
+                    </a>
                 </li>
-                <li>
-                    <svg>
-                        <use></use>
-                    </svg>
+                <li class="hero-item">
+                    <a href="">
+                        <svg>
+                            <use></use>
+                        </svg>
+                    </a>
                 </li>
-                <li>
-                    <svg>
-                        <use></use>
-                    </svg>
-                </li>
-                <li>
-                    <svg>
-                        <use></use>
-                    </svg>
+                <li class="hero-item">
+                    <a href="">
+                        <svg>
+                            <use></use>
+                        </svg>
+                    </a>
                 </li>
             </ul>
-        </section>
+        </div>
+    </header>
 
-        <!-- In numbers -->
-        <section>
-            <p>since 2019</p>
-            <h2>In numbers</h2>
+    <!-- logo -->
+    <section>
+        <ul class="logo-lists list">
+            <li class="logo-list">
+                <svg>
+                    <use></use>
+                </svg>
+            </li>
+            <li class="logo-list">
+                <svg>
+                    <use></use>
+                </svg>
+            </li>
+            <li class="logo-list">
+                <svg>
+                    <use></use>
+                </svg>
+            </li>
+            <li class="logo-list">
+                <svg>
+                    <use></use>
+                </svg>
+            </li>
+        </ul>
+    </section>
 
-            <ul>
-                <li>
-                    <h3>Happy clients</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Ut fringilla interdum aliquet.
-                    </p>
-                    <span>1000+</span>
-                </li>
-                <li>
-                    <h3>Products created</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Ut fringilla interdum aliquet.
-                    </p>
-                    <span>20+</span>
-                </li>
-                <li>
-                    <h3>Investments received</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Ut fringilla interdum aliquet.
-                    </p>
-                    <span>&#36;5M+</span>
-                </li>
-            </ul>
-        </section>
+    <!-- In numbers -->
+    <section>
+        <p class="pre-titel">since 2019</p>
+        <h2 class="titel">In numbers</h2>
 
-        <!-- Get to know features -->
-        <section>
-            <h2>Get to know our main features</h2>
-            <a href="">Buy now</a>
-            <ul>
-                <!-- Simple -->
-                <li>
-                    <ul>
-                        <li>
-                            <h3>Simple</h3>
-                        </li>
-                        <li>
-                            <p>
-                                Here you will not find complex technological
-                                solutions that will baffle you.
-                            </p>
-                        </li>
-                        <li>
-                            <p>Save your resources on development</p>
-                        </li>
-                        <li>
-                            <p>Easy to understand</p>
-                        </li>
-                        <li>User friendly</li>
-                    </ul>
-                </li>
-                <!-- Customizable -->
-                <li>
-                    <ul>
-                        <li>
-                            <h3>Customizable</h3>
-                        </li>
-                        <li>
-                            <p>
-                                You can reuse blocks and individual elements to
-                                create something unique on your website.
-                            </p>
-                        </li>
-                        <li>
-                            <p>Reuse the sections and create your own style</p>
-                        </li>
-                        <li>
-                            <p>Save your time</p>
-                        </li>
-                        <li>
-                            <p>Save your resources on development</p>
-                        </li>
-                        <li>
-                            <p>Unique design</p>
-                        </li>
-                    </ul>
-                </li>
-                <!-- Stylish -->
-                <li>
-                    <ul>
-                        <li>
-                            <h3>Stylish</h3>
-                        </li>
-                        <li>
-                            <p>
-                                Right and without unnecessary tinsel, just
-                                scroll through this template and you will see.
-                            </p>
-                        </li>
-                        <li>
-                            <p>Unique design</p>
-                        </li>
-                        <li>
-                            <p>
-                                Unforgettable 3D elements and trendy
-                                glass-effect
-                            </p>
-                        </li>
-                        <li>
-                            <p>Design that drives an industry</p>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
+        <ul class="list">
+            <li>
+                <h3 class="second-title">Happy clients</h3>
+                <p class="desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    fringilla interdum aliquet.
+                </p>
+                <span class="number">1000+</span>
+            </li>
+            <li>
+                <h3 class="second-title">Products created</h3>
+                <p class="desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    fringilla interdum aliquet.
+                </p>
+                <span class="number">20+</span>
+            </li>
+            <li>
+                <h3 class="second-title">Investments received</h3>
+                <p class="desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    fringilla interdum aliquet.
+                </p>
+                <span class="number">&#36;5M+</span>
+            </li>
+        </ul>
+    </section>
 
-        <!-- Watch video -->
-        <section>
-            <h2>Watch video to discover advantages</h2>
-            <video src="./"></video>
-        </section>
+    <!-- Get to know features -->
+    <section>
+        <h2 class="titel">Get to know our main features</h2>
+        <a href="" class="btn-link">Buy now</a>
+        <ul class="features-lists list">
+            <!-- Simple -->
+            <li>
+                <ul>
+                    <li>
+                        <h3 class="features-titel">Simple</h3>
+                        <p class="desc">
+                            Here you will not find complex technological solutions
+                            that will baffle you.</p>
+                    </li>
 
-        <!-- No need to know any technologies -->
-        <section>
-            <h2>No need to know any technologies</h2>
-            <ul>
-                <li>
-                    <ul>
-                        <li>
-                            <h3>Easy to understand</h3>
-                        </li>
-                        <li>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Ut fringilla interdum aliquet.
-                                Nulla viverra quam sit amet lacus accumsan, ac
-                                interdum nibh eleifend. Aliquam at elit at diam
-                                congue aliquam at eu felis. Vestibulum sed massa
-                                bibendum, porta ex consectetur, commodo tellus.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Ut fringilla interdum aliquet.
-                                Nulla viverra quam sit amet lacus accumsan, ac
-                                interdum nibh eleifend. Aliquam at elit at diam
-                                congue aliquam at eu felis.
-                            </p>
-                        </li>
-                        <li>
-                            <p>learn more</p>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li>
-                            <h3>Easy to change</h3>
-                        </li>
-                        <li>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Ut fringilla interdum aliquet.
-                                Nulla viverra quam sit amet lacus accumsan, ac
-                                interdum nibh eleifend. Aliquam at elit at diam
-                                congue aliquam at eu felis. Vestibulum sed massa
-                                bibendum, porta ex consectetur, commodo tellus.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Ut fringilla interdum aliquet.
-                                Nulla viverrum nibh eleifend. Aliquam at elit at
-                                diam congue aliquam at eu felis.
-                            </p>
-                        </li>
-                        <li>
-                            <p>learn more</p>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
+                    <li>
+                        <p class="desc">Save your resources on development</p>
+                        <p class="desc">Easy to understand</p>
+                        <p class="desc">User friendly</p>
+                    </li>
+                </ul>
+            </li>
+            <!-- Customizable -->
+            <li>
+                <ul>
+                    <li>
+                        <h3 class="features-titel">Customizable</h3>
+                        <p class="desc">
+                            You can reuse blocks and individual elements to create
+                            something unique on your website.</p>
+                    </li>
 
-        <!-- Price plans -->
-        <section>
-            <h2>Price plans</h2>
-            <ul>
-                <li>
-                    <ul>
-                        <li><h3>Basic</h3></li>
-                        <li><p>Free 30-days trial period</p></li>
-                        <li>
-                            <p>
-                                Professional design and guidelines for
-                                customization
-                            </p>
-                        </li>
-                        <li><p>Unlimited amount of pages to change</p></li>
-                        <li><p>24/7 technical support</p></li>
-                        <li><p>Advenced security components</p></li>
-                        <li>
-                            <p>&#36;29<span>&#47; month</span></p>
-                        </li>
-                        <li><button type="button">Buy now</button></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li><h3>Pro</h3></li>
-                        <li><p>Free 30-days trial period</p></li>
-                        <li>
-                            <p>
-                                Professional design and guidelines for
-                                customization
-                            </p>
-                        </li>
-                        <li><p>Unlimited amount of pages to change</p></li>
-                        <li><p>24/7 technical support</p></li>
-                        <li><p>Advenced security components</p></li>
-                        <li>
-                            <p>&#36;39<span>&#47; month</span></p>
-                        </li>
-                        <li><button type="button">Buy now</button></li>
-                        <li><p>Best value</p></li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
+                    <li>
+                        <p class="desc">Reuse the sections and create your own style</p>
+                        <p class="desc">Save your time</p>
+                        <p class="desc">Save your resources on development</p>
+                        <p class="desc">Unique design</p>
+                    </li>
+                </ul>
+            </li>
+            <!-- Stylish -->
+            <li>
+                <ul>
+                    <li>
+                        <h3 class="features-titel">Stylish</h3>
+                        <p class="desc">
+                            Right and without unnecessary tinsel, just scroll
+                            through this template and you will see.</p>
+                    </li>
 
-        <!-- Meet the team -->
-        <section>
+                    <li>
+                        <p class="desc">Unique design</p>
+                        <p class="desc">Unforgettable 3D elements and trendy glass-effect</p>
+                        <p class="desc">Design that drives an industry</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Watch video -->
+    <section>
+        <h2 class="third-еitle">Watch video to discover advantages</h2>
+        <video src="./" width="1300" height="908"></video>
+    </section>
+
+    <!-- No need to know any technologies -->
+    <section>
+        <h2 class="technologies-title">No need to know any technologies</h2>
+        <ul class="list">
+            <li>
+                <h3 class="tech-second-titel">Easy to understand</h3>
+                <p class="desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Ut fringilla interdum aliquet. Nulla viverra quam sit
+                    amet lacus accumsan, ac interdum nibh eleifend. Aliquam
+                    at elit at diam congue aliquam at eu felis. Vestibulum
+                    sed massa bibendum, porta ex consectetur, commodo
+                    tellus.
+                </p>
+                <p class="desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Ut fringilla interdum aliquet. Nulla viverra quam sit
+                    amet lacus accumsan, ac interdum nibh eleifend. Aliquam
+                    at elit at diam congue aliquam at eu felis.
+                </p>
+                <p class="more">learn more</p>
+            </li>
+
+            <li>
+                <h3 class="technologies-title">Reuse the sections</h3>
+            </li>
+
+            <li>
+
+                <h3 class="tech-second-titel">Easy to change</h3>
+                <p class="desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Ut fringilla interdum aliquet. Nulla viverra quam sit
+                    amet lacus accumsan, ac interdum nibh eleifend. Aliquam
+                    at elit at diam congue aliquam at eu felis. Vestibulum
+                    sed massa bibendum, porta ex consectetur, commodo
+                    tellus.
+                </p>
+                <p class="desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Ut fringilla interdum aliquet. Nulla viverrum nibh
+                    eleifend. Aliquam at elit at diam congue aliquam at eu
+                    felis.
+                </p>
+                <p class="more">learn more</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Price plans -->
+    <section>
+        <h2 class="titel">Price plans</h2>
+        <ul class="price-lists list">
+            <li>
+                <h3 class="price-titel">Basic</h3>
+                <p>Free 30-days trial period</p>
+                <p>Professional design and guidelines for customization</p>
+                <p>Unlimited amount of pages to change</p>
+                <p>24/7 technical support</p>
+                <p>Advenced security components</p>
+                <p>&#36;29<span>&#47; month</span></p>
+                <button type="button" class="btn">Buy now</button>
+            </li>
+            <li>
+                <h3 class="price-titel">Pro</h3>
+                <p>Free 30-days trial period</p>
+                <p>Professional design and guidelines for customization</p>
+                <p>Unlimited amount of pages to change</p>
+                <p>24/7 technical support</p>
+                <p>Advenced security components</p>
+                <p>&#36;39<span>&#47; month</span></p>
+                <button type="button" class="btn">Buy now</button>
+                <p>Best value</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Meet the team -->
+    <section>
+        <div class="container">
             <h2>
                 Meet the team<br />
                 Want to join?
             </h2>
-            <ul>
+            <ul class="list">
                 <li><button type="button">Join us</button></li>
                 <li><button type="button">See all openings</button></li>
             </ul>
+        </div>
 
-            <ul>
-                <li>
-                    <img src="./img/martin-fury.jpg" alt="photo" width="220"/>
-                    <h3>Martin Fury</h3>
-                    <p>CEO &</p>
-                    <p>Co-Founder</p>
-                </li>
+        <ul class="team-lists list">
+            <li class="team-card">
+                <img src="./img/martin-fury.jpg" alt="photo" width="220" />
+                <h3 class="titel-card">Martin Fury</h3>
+                <p>CEO &</p>
+                <p>Co-Founder</p>
+            </li>
 
-                <li>
-                    <img src="./img/Timoty Crash.jpg" alt="photo" width="220"/>
-                    <h3>Timoty Crash</h3>
-                    <p>CEO &</p>
-                    <p>Co-Founder</p>
-                </li>
+            <li class="team-card">
+                <img src="./img/Timoty Crash.jpg" alt="photo" width="220" />
+                <h3 class="titel-card">Timoty Crash</h3>
+                <p>CEO &</p>
+                <p>Co-Founder</p>
+            </li>
 
-                <li>
-                    <img src="./img/miranda-loudy.jpg" alt="photo" width="220"/>
-                    <h3>Miranda Loudy</h3>
-                    <p>Global HRD</p>
-                </li>
+            <li class="team-card">
+                <img src="./img/miranda-loudy.jpg" alt="photo" width="220" />
+                <h3 class="titel-card">Miranda Loudy</h3>
+                <p>Global HRD</p>
+            </li>
 
-                <li>
-                    <img src="./img/jim-partners.jpg" alt="photo" width="220"/>
-                    <h3>Jim Partners</h3>
-                    <p>Chief Product Officer</p>
-                </li>
+            <li class="team-card">
+                <img src="./img/jim-partners.jpg" alt="photo" width="220" />
+                <h3 class="titel-card">Jim Partners</h3>
+                <p>Chief Product Officer</p>
+            </li>
 
-                <li>
-                    <img src="./img/joe-lee.jpg" alt="photo" width="220"/>
-                    <h3>Joe Lee</h3>
-                    <p>Lead Product Designer</p>
-                </li>
+            <li class="team-card">
+                <img src="./img/joe-lee.jpg" alt="photo" width="220" />
+                <h3 class="titel-card">Joe Lee</h3>
+                <p>Lead Product Designer</p>
+            </li>
 
-                <li>
-                    <img src="./img/alex-sosnovskyi.jpg" alt="photo" width="220"/>
-                    <h3>Alex Sosnovskyi</h3>
-                    <p>Technical Lead & Senior Software Engineer</p>
-                </li>
+            <li class="team-card">
+                <img src="./img/alex-sosnovskyi.jpg" alt="photo" width="220" />
+                <h3 class="titel-card">Alex Sosnovskyi</h3>
+                <p>Technical Lead & Senior Software Engineer</p>
+            </li>
 
-                <li>
-                    <img src="./img/andy-gupta.jpg" alt="photo" width="220"/>
-                    <h3>Andy Gupta</h3>
-                    <p>Marketing Operations</p>
-                </li>
+            <li class="team-card">
+                <img src="./img/andy-gupta.jpg" alt="photo" width="220" />
+                <h3 class="titel-card">Andy Gupta</h3>
+                <p>Marketing Operations</p>
+            </li>
 
-                <li>
-                    <img src="./img/dan-wize-nicon.jpg" alt="photo" width="220"/>
-                    <h3>Dan Wize-Nicon</h3>
-                    <p>UI/UX Designer</p>
-                </li>
-            </ul>
-        </section>
+            <li class="team-card">
+                <img src="./img/dan-wize-nicon.jpg" alt="photo" width="220" />
+                <h3 class="titel-card">Dan Wize-Nicon</h3>
+                <p>UI/UX Designer</p>
+            </li>
+        </ul>
+    </section>
 
-        <!-- Frequently asked questions -->
-        <section>
-            <h2>Frequently asked questions</h2>
-            <ul>
-                <li><p>Make the FAQs easy to find</p></li>
-                <li><p>Keep answers short</p></li>
-                <li>
-                    <p>
-                        Write the FAQ sheet in an actual question-and-answer
-                        format
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        Write the FAQ sheet in an actual question-and-answer
-                        format
-                    </p>
-                </li>
-            </ul>
-        </section>
-
-        <!-- People talk about us -->
-        <section>
-            <h2>People talk about us</h2>
-            <article>
-                <img src="./img/reviews-1.jpg" alt="photo" />
-                <!-- social link -->
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <h3>Joe Smith</h3>
-                <p>CEO at Flatty</p>
-                <img src="" alt="" />
+    <!-- Frequently asked questions -->
+    <section class="faq-section">
+        <h2 class="titel">Frequently asked questions</h2>
+        <ul class="faq-lists list">
+            <li>
+                <p>Make the FAQs easy to find</p>
+            </li>
+            <li>
+                <p>Keep answers short</p>
+            </li>
+            <li>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    fringilla interdum aliquet. Nulla viverra quam sit amet
-                    lacus accumsan, ac interdum nibh eleifend.
+                    Write the FAQ sheet in an actual question-and-answer format
                 </p>
-                <button type="button"></button>
-                <button type="button"></button>
-            </article>
-        </section>
+            </li>
+            <li>
+                <p>
+                    Write the FAQ sheet in an actual question-and-answer format
+                </p>
+            </li>
+        </ul>
+    </section>
 
-        <!-- In the press -->
-        <section>
-            <h2>In the press</h2>
-            <button type="button">View more</button>
-            <ul>
-                <li>
-                    <article>
-                        <img src="./img/press-1.jpg" alt="" />
-                        <p>Must to read</p>
-                        <h3>
-                            Newsletters template: blog posts, articles,
-                            features, sales
-                        </h3>
-                        <p>read more</p>
-                    </article>
-                </li>
-
-                <li>
-                    <article>
-                        <img src="./img/press-2.jpg" alt="" />
-                        <p>New</p>
-                        <h3>Nextgen - new temlate about games and industry</h3>
-                        <p>read more</p>
-                    </article>
-                </li>
-
-                <li>
-                    <article>
-                        <img src="./img/press-3.jpg" alt="" />
-                        <p>Must to read</p>
-                        <h3>Enigma Software for startups is the best choice</h3>
-                        <p>read more</p>
-                    </article>
-                </li>
+    <!-- People talk about us -->
+    <section>
+        <h2 class="titel">People talk about us</h2>
+        <article>
+            <img src="./img/reviews-1.jpg" alt="photo" />
+            <!-- social link -->
+            <ul class="social-reviews list">
+                <li></li>
+                <li></li>
+                <li></li>
             </ul>
-        </section>
-
-        <!-- Contact us -->
-        <section>
-            <h2>Contact us</h2>
-            <p>
-                The most popular questions are listed in the FAQs section. We
-                are happy to help you with any of your questions, wishes and
-                objections.
+            <h3 class="titel-reviews">Joe Smith</h3>
+            <p class="pre-desc-reviews">CEO at Flatty</p>
+            <img src="" alt="" />
+            <p class="desc-reviews">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                fringilla interdum aliquet. Nulla viverra quam sit amet lacus
+                accumsan, ac interdum nibh eleifend.
             </p>
-            <span>*</span>
-            <p>Support service will contact you within 48 hours.</p>
-            <ul>
-                <li><p>How can we call you?</p></li>
-                <li><input type="text" /></li>
-                <li><p>How can we contact you?</p></li>
-                <li><input type="text" /></li>
-                <li><p>How can we help you?</p></li>
-                <li><input type="text" /></li>
-                <button type="button">Submit</button>
-            </ul>
-        </section>
+            <div>
+                <button type="button"></button>
+                <button type="button"></button>
+            </div>
+        </article>
+    </section>
 
-        <!-- In social media -->
-        <section>
-            <h2>In social media</h2>
-            <a href="">Go to Instagram</a>
-            <img src="./img/small.svg" alt="" />
-            <ul>
-                <li><img src="./img/social-media-1.jpg" alt="" /></li>
-                <li><img src="./img/social-media-2.jpg" alt="" /></li>
-                <li><img src="./img/social-media-3.jpg" alt="" /></li>
-                <li><img src="./img/social-media-4.jpg" alt="" /></li>
-                <li><img src="./img/social-media-5.jpg" alt="" /></li>
-            </ul>
-            <img src="./img/bigester.svg" alt="" />
-        </section>
+    <!-- In the press -->
+    <section>
+        <h2 class="titel">In the press</h2>
+        <button type="button">View more</button>
+        <ul class="list">
+            <li>
+                <article>
+                    <img src="./img/press-1.jpg" alt="" />
+                    <p class="recommended">Must to read</p>
+                    <h3 class="press-titel">
+                        Newsletters template: blog posts, articles, features, sales
+                    </h3>
+                    <p class="more">read more</p>
+                </article>
+            </li>
 
-        <!-- footer -->
-        <footer>
-            <a href=""><img src="./img/swipe-logo.svg" alt="" /></a>
-            <address>
-                <a href="">Kyiv, Ukraine</a>
-                <a href="">hello.craftengine@gmail.com</a>
-                <p>Made with ❤️ by</p>
-                <a href="">Craftengine 🇺🇦</a>
-            </address>
-            <p>&#169; Swipe. All rights reserved. Powered by</p>
-            <a href="./index.html">Webflow</a>
+            <li>
+                <article>
+                    <img src="./img/press-2.jpg" alt="" />
+                    <p class="recommended">New</p>
+                    <h3 class="press-titel">Nextgen - new temlate about games and industry</h3>
+                    <p class="more">read more</p>
+                </article>
+            </li>
 
-            <ul>
-                <li>
-                    <ul>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Features</a></li>
-                        <li><a href="">Pricing</a></li>
-                        <li><a href="">Team</a></li>
-                    </ul>
-                </li>
+            <li>
+                <article>
+                    <img src="./img/press-3.jpg" alt="" />
+                    <p class="recommended">Must to read</p>
+                    <h3 class="press-titel">Enigma Software for startups is the best choice</h3>
+                    <p class="more">read more</p>
+                </article>
+            </li>
+        </ul>
+    </section>
 
-                <li>
-                    <ul>
-                        <li><a href="">FAQ</a></li>
-                        <li><a href="">Feedback</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-                </li>
+    <!-- Contact us -->
+    <section>
+        <h2 class="tittel">Contact us</h2>
+        <span>*</span>
+        <p>
+            The most popular questions are listed in the FAQs section. We are
+            happy to help you with any of your questions, wishes and objections.
+        </p>
+        <p class="contact">Support service will contact you within 48 hours.</p>
+        <ul class="list">
+            <li>
+                <p>How can we call you?</p>
+                <input type="text" />
+            </li>
+            <li>
+                <p>How can we contact you?</p>
+                <input type="text" />
+            </li>
+            <li>
+                <p>How can we help you?</p>
+                <input type="text" />
+            </li>
+            <button type="button">Submit</button>
+        </ul>
+    </section>
 
-                <li>
-                    <ul>
-                        <li><a href="">Twitter</a></li>
-                        <li><a href="">Facebook</a></li>
-                        <li><a href="">Instagram</a></li>
-                        <li><a href="">Licensing</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </footer>
-    </body>
+    <!-- In social media -->
+    <section>
+        <h2 class="titel">In social media</h2>
+        <a href="" class="btn-link">Go to Instagram</a>
+        <img src="./img/small.svg" alt="" width="45"/>
+        <ul class="social-lists list">
+            <li><img src="./img/social-media-1.jpg" alt="" /></li>
+            <li><img src="./img/social-media-2.jpg" alt="" /></li>
+            <li><img src="./img/social-media-3.jpg" alt="" /></li>
+            <li><img src="./img/social-media-4.jpg" alt="" /></li>
+            <li><img src="./img/social-media-5.jpg" alt="" /></li>
+        </ul>
+        <img src="./img/bigester.svg" alt="" width="45"/>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href=""><img src="./img/swipe-logo.svg" alt="logo" class="logo"/></a>
+        <address class="address">
+            <a href="">Kyiv, Ukraine</a>
+            <a href="">hello.craftengine@gmail.com</a>
+            <p>Made with ❤️ by</p>
+            <a href="">Craftengine 🇺🇦</a>
+        </address>
+        <p>&#169; Swipe. All rights reserved. Powered by</p>
+        <a href="./index.html">Webflow</a>
+
+        <ul class="list">
+            <li>
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Team</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <ul>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Feedback</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <ul>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Licensing</a></li>
+                </ul>
+            </li>
+        </ul>
+    </footer>
+</body>
+
 </html>
