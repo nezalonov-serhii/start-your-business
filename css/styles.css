@@ -137,11 +137,11 @@ a {
     margin: auto;
 }
 
-.nav a {
+.nav-link {
     color: var(--title-color);
 }
 
-.nav a:not(:last-child) {
+.nav-link:not(:last-child) {
     margin-right: 24px;
 }
 
