@@ -927,7 +927,7 @@ a {
     content: "";
     position: absolute;
     top: -40px;
-    left: -50px;
+    left: -20px;
     z-index: -1;
     background-image: url(../img/background/Price-1.jpg); 
     background-size: contain;
