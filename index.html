@@ -322,7 +322,7 @@
                         <p class="price-befor coast">Advenced security components</p>
                         <div class="price-wrap">
                             <p class="mouth">&#36;29<span class="coast">&#47; month</span></p>
-                            <button type="button" class="btn-link">Buy now</button>
+                            <button type="button" data-modal-open class="btn-link">Buy now</button>
                         </div>
                     </li>
                     <li class="price-item pro-item">
@@ -335,11 +335,32 @@
             
                         <div class="price-wrap">
                             <p class="mouth">&#36;39<span class="coast">&#47; month</span></p>
-                            <button type="button" class="btn-link">Buy now</button>
+                            <button  type="button" data-modal-open class="btn-link">Buy now</button>
                         </div>
                         <p class="best-price">Best value</p>
                     </li>
                 </ul>
+                <div data-modal class="backdrop is-hidden">
+                    <div class="modal">
+                        <form class="modal-form">
+                            <label for="">
+                                <p class="desc-modal">How can we call you?</p>
+                                <input type="text" placeholder="Enter your name" class="modal-input" />
+                            </label>
+                            <label for="">
+                                <p class="desc-modal">How can we contact you?</p>
+                                <input type="email" placeholder="Enter your email" class="modal-input second" />
+                            </label>
+                            <label for="">
+                                <p class="desc-modal">How can we help you?</p>
+                                <textarea name="" id="" cols="43" rows="3" placeholder="Enter your message"
+                                    class="modal-texarea" /></textarea>
+                            </label>
+                            <button type="submit" class="btn-link">Submit</button>
+                        </form>
+                        <button type="button" data-modal-close class="modal-btn">X</button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -634,6 +655,7 @@
             </ul>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
