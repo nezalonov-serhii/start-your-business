@@ -1,0 +1,32 @@
+.btn,
+.btn-link {
+    display: block;
+    color: var(--button-color);
+    padding: 8px 16px;
+    background: var(--button-bgc);
+    border-radius: 5px;
+    border: solid 2px var(--button-bgc);
+    cursor: pointer;
+
+    transition: 250ms linear, transform 500ms ease-in-out 500ms
+
+}
+
+.btn-link:hover,
+.btn-link:focus {
+    background-color: var(--second-bgc);
+    color: var(--title-color);
+}
+
+.btn {
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    background-color: var(--second-bgc);
+    color: var(--title-color);
+}
+
+.btn:hover,
+.btn:focus {
+    border: solid 2px var(--button-bgc);
+    color: var(--button-color);
+    background: var(--button-bgc);
+}

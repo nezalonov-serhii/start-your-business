@@ -1,0 +1,19 @@
+.logo-section {
+    position: relative;
+    z-index: -5;
+    padding: 20px 0;
+    background-color: var(--second-bgc);
+}
+
+.logo-lists {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 20px;
+}
+
+.logo-item {
+   width: calc((100% - 90px) / 4);
+}
+

@@ -1,0 +1,56 @@
+.link-focus {
+    position: relative;
+}
+
+.link-focus::before {
+    display: inline-block;
+    content: "";
+    width: 130%;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    transform: translate(-12%, 0);
+    transition: 250ms linear, transform 500ms ease-in-out 500ms
+}
+
+.link-focus:focus:before,
+.link-focus:hover:before {
+    display: inline-block;
+    content: "";
+    width: 130%;
+    height: 3px;
+    background-color: var(--title-color);
+    position: absolute;
+    bottom: 0;
+    transform: translate(-12%, 0);
+    transition: 250ms linear, transform 500ms ease-in-out 500ms
+}
+
+.link-focus-footer {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.link-focus-footer::before {
+    display: inline-block;
+    content: "";
+    width: 130%;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    transform: translate(-12%, 0);
+    transition: 250ms linear, transform 500ms ease-in-out 500ms
+}
+
+.link-focus-footer:focus:before,
+.link-focus-footer:hover:before {
+    display: inline-block;
+    content: "";
+    width: 130%;
+    height: 3px;
+    background-color: var(--button-color);
+    position: absolute;
+    bottom: 0;
+    transform: translate(-12%, 0);
+    transition: 250ms linear, transform 500ms ease-in-out 500ms
+}

@@ -12,51 +12,61 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
 <body>
-    <header class="page-header">
-        <div class="container-spun">
-            <div class=" wrap-header flex ">
-                <a href="./index.html"><img src="./img/swipe-logo.svg" alt="logo" class="header-logo"></a>
-                <nav class="nav">
-                    <a href="#about" class="nav-link link-focus">About</a>
-                    <a href="#features" class="nav-link link-focus">Features</a>
-                    <a href="#pricing" class="nav-link link-focus">Pricing</a>
-                    <a href="#team" class="nav-link link-focus">Team</a>
-                    <a href="#faq" class="nav-link link-focus">FAQ</a>
-                    <a href="#feedback" class="nav-link link-focus">Feedback</a>
-                    <a href="#blog" class="nav-link link-focus">Blog</a>
-                    <a href="#contact" class="nav-link link-focus">Contact</a>
-                </nav>
-                <a href="#pricing" class="btn">Buy now</a>
+    <div class="hero-wrap">
+        <header class="page-header section">
+            <div class="container">
+                <div class="header-wrap">
+                    <a href="./index.html"><img src="./img/swipe-logo.svg" alt="logo" class="header-logo"></a>
+                    <div class="menu-wrap">
+                        <svg width="50px" height="50px" class="menu-icon">
+                            <use href="./img/symbol-defs.svg#icon-menu"></use>
+                            <use href="./img/symbol-defs.svg#icon-close-menu"></use>
+                        </svg>
+                        <nav class="nav">
+                            <a href="#about" class="nav-link link-focus">About</a>
+                            <a href="#features" class="nav-link link-focus">Features</a>
+                            <a href="#pricing" class="nav-link link-focus">Pricing</a>
+                            <a href="#team" class="nav-link link-focus">Team</a>
+                            <a href="#faq" class="nav-link link-focus">FAQ</a>
+                            <a href="#feedback" class="nav-link link-focus">Feedback</a>
+                            <a href="#blog" class="nav-link link-focus">Blog</a>
+                            <a href="#contact" class="nav-link link-focus">Contact</a>
+                            <a href="#pricing" class="btn-link">Buy now</a>
+                        </nav>
+                    </div>
+                </div>
             </div>
-            
-            <!-- hero -->
+        </header>
+        <!-- hero -->
+        <section class="hero section">
             <div class="container">
                 <h1 class="hero-title">Accessible way to start your business</h1>
                 <h2 class="hero-desc second-title">Simple. Customizable. Stylish.</h2>
                 <a href="#video" class="btn-hero btn-link">Get demo for free</a>
-                <div class="wraper-hero">
+
+                <div class="social-hero-wrap">
                     <p class="more">watch full video</p>
                     <ul class="hero-social list">
                         <li class="hero-item">
-                            <a href="">
+                            <a href="./" class="hero-link">
                                 <svg class="social-item">
                                     <use href="./img/symbol-defs.svg#icon-twiter"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="hero-item">
-                            <a href="">
+                            <a href="./" class="hero-link">
                                 <svg class="social-item">
                                     <use href="./img/symbol-defs.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="hero-item">
-                            <a href="">
+                            <a href="./" class="hero-link">
                                 <svg class="social-item">
                                     <use href="./img/symbol-defs.svg#icon-facebook"></use>
                                 </svg>
@@ -65,46 +75,42 @@
                     </ul>
                 </div>
             </div>
-        </div>
-    </header>
-
+        </section>
+        <section class=" logo-section">
+            <div class="container ">
+                <ul class="logo-lists list">
+                    <li class="logo-item">
+                        <img src="./img/swipe-logo.svg" alt="logo">
+                    </li>
+                    <li class="logo-item">
+                        <img src="./img/webflow.jpg" alt="logo">
+                    </li>
+                    <li class="logo-item">
+                        <img src="./img/swipe-logo.svg" alt="logo">
+                    </li>
+                    <li class="logo-item">
+                        <img src="./img/webflow.jpg" alt="logo">
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
     <!-- logo -->
-    <section class="section-logo">
-        <div class="container ">
-            <ul class="logo-lists list">
-                <li>
-                    <img src="./img/swipe-logo.svg" alt="logo" width="110">
-                </li>
-                <li>
-                    <svg class="logo-webflow">
-                        <use href="./img/symbol-defs.svg#icon-webflow-logo"></use>
-                    </svg>
-                </li>
-                <li>
-                    <img src="./img/swipe-logo.svg" alt="logo" width="110">
-                </li>
-                <li>
-                    <svg class="logo-webflow">
-                        <use href="./img/symbol-defs.svg#icon-webflow-logo"></use>
-                    </svg>
-                </li>
-            </ul>
-        </div>
-    </section>
+    
 
     <!-- In numbers -->
-    <section class="number-wrap" id="about">
+    <section class="number-wrap section" id="about">
         <div class="container-bgc">
             <div class="numbers-section container">
                 <div class="numbers-wraper">
                     <p class="pre-title">since 2019</p>
                     <h2 class="title">In numbers</h2>
-            
+
                 </div>
                 <ul class="numbers-lists list">
                     <li class="numbers-item">
                         <div class="desc-wraper">
-                            <h3 class="second-title">Happy clients</h3>
+                            <h3 class="numb-title">Happy clients</h3>
                             <p class="numb-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                                 fringilla interdum aliquet.</p>
                         </div>
@@ -112,7 +118,7 @@
                     </li>
                     <li class="numbers-item">
                         <div class="desc-wraper">
-                            <h3 class="second-title">Products created</h3>
+                            <h3 class="numb-title">Products created</h3>
                             <p class="numb-desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                                 fringilla interdum aliquet.</p>
                         </div>
@@ -120,7 +126,7 @@
                     </li>
                     <li class="numbers-item">
                         <div class="desc-wraper">
-                            <h3 class="second-title">Investments received</h3>
+                            <h3 class="numb-title">Investments received</h3>
                             <p class="numb-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                                 fringilla interdum aliquet.</p>
                         </div>
@@ -241,8 +247,9 @@
                 <h2 class="video-title">Watch video to<br> discover advantages</h2>
                 <div class="line"></div>
             </div>
-            <iframe width="1200" height="675" src="https://www.youtube.com/embed/t0vXnVVoFPA?start=1737" title="YouTube video player"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            <iframe width="100" height="100" src="https://www.youtube.com/embed/t0vXnVVoFPA?start=1737"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
     </section>
@@ -332,10 +339,10 @@
                         <p class="price-befor">Unlimited amount of pages to change</p>
                         <p class="price-befor">24/7 technical support</p>
                         <p class="price-befor">Advenced security components</p>
-            
+
                         <div class="price-wrap">
                             <p class="mouth">&#36;39<span class="coast">&#47; month</span></p>
-                            <button  type="button" data-modal-open class="btn-link">Buy now</button>
+                            <button type="button" data-modal-open class="btn-link">Buy now</button>
                         </div>
                         <p class="best-price">Best value</p>
                     </li>
@@ -353,7 +360,7 @@
                             </label>
                             <label for="">
                                 <p class="desc-modal">How can we help you?</p>
-                                <textarea name="" id="" cols="43" rows="3" placeholder="Enter your message"
+                                <textarea name="" id="" placeholder="Enter your message"
                                     class="modal-texarea" /></textarea>
                             </label>
                             <button type="submit" class="btn-link">Submit</button>
@@ -379,64 +386,58 @@
                 </ul>
             </div>
             <div class="flex">
-                <svg width="130" height="130" class="icon-small">
-                    <use href="./img/symbol-defs.svg#icon-small"></use>
-                </svg>
                 <ul class="team-lists list">
                     <li class="team-card">
-                        <img src="./img/martin-fury.jpg" alt="photo" width="220" />
+                        <img src="./img/martin-fury.jpg" alt="photo" />
                         <h3 class="title-card">Martin Fury</h3>
                         <p>CEO &</p>
                         <p>Co-Founder</p>
                     </li>
 
                     <li class="team-card">
-                        <img src="./img/Timoty Crash.jpg" alt="photo" width="220" />
+                        <img src="./img/Timoty Crash.jpg" alt="photo" />
                         <h3 class="title-card">Timoty Crash</h3>
                         <p>CEO &</p>
                         <p>Co-Founder</p>
                     </li>
 
                     <li class="team-card">
-                        <img src="./img/miranda-loudy.jpg" alt="photo" width="220" />
+                        <img src="./img/miranda-loudy.jpg" alt="photo" />
                         <h3 class="title-card">Miranda Loudy</h3>
                         <p>Global HRD</p>
                     </li>
 
                     <li class="team-card">
-                        <img src="./img/jim-partners.jpg" alt="photo" width="220" />
+                        <img src="./img/jim-partners.jpg" alt="photo" />
                         <h3 class="title-card">Jim Partners</h3>
                         <p>Chief Product Officer</p>
                     </li>
 
                     <li class="team-card">
-                        <img src="./img/joe-lee.jpg" alt="photo" width="220" />
+                        <img src="./img/joe-lee.jpg" alt="photo" />
                         <h3 class="title-card">Joe Lee</h3>
                         <p>Lead Product Designer</p>
                     </li>
 
                     <li class="team-card">
-                        <img src="./img/alex-sosnovskyi.jpg" alt="photo" width="220" />
+                        <img src="./img/alex-sosnovskyi.jpg" alt="photo" />
                         <h3 class="title-card">Alex Sosnovskyi</h3>
                         <p>Technical Lead & Senior Software Engineer</p>
                     </li>
 
                     <li class="team-card">
-                        <img src="./img/andy-gupta.jpg" alt="photo" width="220" />
+                        <img src="./img/andy-gupta.jpg" alt="photo" />
                         <h3 class="title-card">Andy Gupta</h3>
                         <p>CMO &</p>
                         <p>Marketing Operations</p>
                     </li>
 
                     <li class="team-card">
-                        <img src="./img/dan-wize-nicon.jpg" alt="photo" width="220" />
+                        <img src="./img/dan-wize-nicon.jpg" alt="photo" />
                         <h3 class="title-card">Dan Wize-Nicon</h3>
                         <p>UI/UX Designer</p>
                     </li>
                 </ul>
-                <svg width="130" height="130" class="icon-bigester">
-                    <use href="./img/symbol-defs.svg#icon-bigester"></use>
-                </svg>
             </div>
         </div>
     </section>
@@ -471,7 +472,7 @@
             </div>
             <article class="reviews-cards">
                 <div>
-                    <img src="./img/reviews-1.jpg" alt="photo" class="reviews-img"/>
+                    <img src="./img/reviews-1.jpg" alt="photo" class="reviews-img" />
                     <!-- social link -->
                     <ul class="social-reviews list">
                         <li>
@@ -578,7 +579,7 @@
                     </label>
                     <label for="">
                         <p class="desc-form">How can we help you?</p>
-                        <textarea name="" id="" cols="30" rows="3" placeholder="Enter your message" 
+                        <textarea name="" id="" cols="30" rows="3" placeholder="Enter your message"
                             class="contact-texarea" /></textarea>
                     </label>
                     <button type="submit" class="btn-link">Submit</button>
@@ -617,8 +618,10 @@
             <div class="wraper-footer">
                 <a href="./index.html"><img src="./img/footer-logo.svg" alt="logo" class="footer-logo" /></a>
                 <address class="address">
-                    <a href="https://goo.gl/maps/x4d9BRNhz3cu9QfM7" class="address-item" target="_blank" rel="noreferrer noopener">Kyiv, Ukraine</a>
-                    <a href="mailto:hello.craftengine@gmail.com" class="address-item" target="_blank" rel="noreferrer noopener">hello.craftengine@gmail.com</a>
+                    <a href="https://goo.gl/maps/x4d9BRNhz3cu9QfM7" class="address-item" target="_blank"
+                        rel="noreferrer noopener">Kyiv, Ukraine</a>
+                    <a href="mailto:hello.craftengine@gmail.com" class="address-item" target="_blank"
+                        rel="noreferrer noopener">hello.craftengine@gmail.com</a>
                 </address>
                 <div class="wrap-footer">
                     <p>&#169; Swipe. All rights reserved. Powered by</p>
@@ -646,10 +649,14 @@
 
                 <li>
                     <ul class="list">
-                        <li class="footer-item"><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener" class="link-focus-footer">Twitter</a></li>
-                        <li class="footer-item"><a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener" class="link-focus-footer">Facebook</a></li>
-                        <li class="footer-item"><a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener" class="link-focus-footer">Instagram</a></li>
-                        <li class="footer-item"><a href="./index.html" target="_blank" rel="noreferrer noopener" class="link-focus-footer">Licensing</a></li>
+                        <li class="footer-item"><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener"
+                                class="link-focus-footer">Twitter</a></li>
+                        <li class="footer-item"><a href="https://www.facebook.com/" target="_blank"
+                                rel="noreferrer noopener" class="link-focus-footer">Facebook</a></li>
+                        <li class="footer-item"><a href="https://www.instagram.com/" target="_blank"
+                                rel="noreferrer noopener" class="link-focus-footer">Instagram</a></li>
+                        <li class="footer-item"><a href="./index.html" target="_blank" rel="noreferrer noopener"
+                                class="link-focus-footer">Licensing</a></li>
                     </ul>
                 </li>
             </ul>

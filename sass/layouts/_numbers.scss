@@ -1,0 +1,36 @@
+.numbers-lists {
+    position: relative;
+    overflow: visible;
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-image: url(../../img/background/in-numbers.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: top;
+    }
+}
+
+.numbers-item {
+    &:not(:last-of-type){
+        margin-bottom: 40px;
+    }
+}
+
+.numb-title {
+    margin-bottom: 10px;
+}
+
+.numb-desc {
+    margin-bottom: 10px;
+}
+
+.number {
+    font-weight: 800;
+    font-size: 50px;
+}
