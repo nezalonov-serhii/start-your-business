@@ -1,7 +1,10 @@
 .logo-section {
-    position: relative;
-    z-index: -5;
     padding: 20px 0;
+    background-color: var(--second-bgc);
+}
+
+.logo-bgc {
+    position: relative;
     background-color: var(--second-bgc);
 }
 
@@ -9,7 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    z-index: 1;
     gap: 20px;
 }
 
