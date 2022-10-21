@@ -1,3 +1,50 @@
+.team-section {
+   overflow: hidden;
+}
+
+.wrap-team {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.team-btn-list {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.team-btn {
+   min-width: 170px;
+}
+
+.team-btn-item {
+   &:not(:last-of-type) {
+      margin-bottom: 8px;
+   }
+}
+
 .team-card {
-    width: 100%;
+   text-align: center;
+
+   @media screen and (min-width: 768px) {
+      height: 380px;
+   }
+
+   @media screen and (min-width: 1200px) {
+      min-height: 342px;
+   }
+
+   & img {
+    margin-bottom: 16px;
+   }
+}
+
+.title-card {
+    margin-bottom: 12px;
+
+   font-size: 20px;
+   line-height: 1.1;
+
+   text-align: center;
 }

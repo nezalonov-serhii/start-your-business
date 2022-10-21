@@ -1,0 +1,63 @@
+.technologies-list {
+   position: relative;
+   top: 0;
+   left: 0;
+
+   &::before {
+      content: "";
+      width: 250px;
+      height: 250px;
+      position: absolute;
+      top: -7%;
+      left: 0;
+      z-index: -1;
+
+      background-image: url(../../img/background/technologies-1.jpg);
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      @media screen and (min-width: 480px) {
+         top: -4%;
+         left: 45%;
+      }
+   }
+
+   &::after {
+      content: "";
+      width: 250px;
+      height: 250px;
+      position: absolute;
+      top: 47%;
+      left: 0;
+      z-index: -1;
+
+      background-image: url(../../img/background/technologies-2.jpg);
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      @media screen and (min-width: 480px) {
+         top: 43%;
+         left: 46%;
+      }
+   }
+}
+
+.technologies-item:not(:last-child) {
+   margin-bottom: 50px;
+}
+
+.technologies-item:nth-child(2n + 1) {
+   margin-bottom: 20px;
+}
+
+.technologies-title {
+   font-size: 30px;
+
+   @media screen and (min-width: 480px) {
+      width: 480px;
+   }
+}
+
+.technologies-desc {
+   margin-bottom: 15px;
+}

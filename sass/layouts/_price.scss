@@ -1,0 +1,58 @@
+.price-lists {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+
+.basic-item,
+.pro-item {
+   padding: 20px 15px;
+
+   background: rgba(255, 255, 255, 0.6);
+   border: 2px solid rgba(255, 255, 255, 0.4);
+   box-shadow: 0px 4px 20px rgba(193, 193, 193, 0.3);
+   border-radius: 10px;
+}
+
+.price-title {
+   margin-bottom: 15px;
+
+   font-size: 25px;
+}
+
+.price-befor {
+   margin-bottom: 10px;
+
+   font-size: 18px;
+}
+
+.coast {
+
+    font-size: 18px;
+    color:#ABAABB;
+}
+
+.price-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mouth {
+    font-size: 40px;
+}
+
+
+.pro-item {
+    position: relative;
+}
+
+.best-price {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 15px;
+    border-radius: 5px;
+
+    background-color: var(--second-bgc);
+}

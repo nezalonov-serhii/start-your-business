@@ -1,0 +1,49 @@
+.slick-track {
+   display: flex;
+   gap: 15px;
+}
+
+.slick-list {
+   @media screen and (min-width: 1200px) {
+      overflow: hidden;
+   }
+
+   @media screen and (max-width: 768px) {
+      width: calc(100% + 30px);
+      margin: 0 auto;
+      margin-left: -15px;
+   }
+}
+
+.slider {
+   position: relative;
+   z-index: 1;
+   margin-bottom: 20px;
+}
+
+.slider .slick-arrow {
+   position: absolute;
+   top: 40%;
+   z-index: 22;
+   font-size: 0;
+   width: 90px;
+   height: 90px;
+   padding: 0;
+
+   background-color: transparent;
+   border: none;
+}
+
+.slider .slick-arrow.slick-prev {
+   left: 0;
+   transform: translateX(-100%);
+   background-image: url(../img/prev.svg);
+   background-size: contain;
+}
+
+.slider .slick-arrow.slick-next {
+   right: 0;
+   transform: translateX(100%);
+   background-image: url(../img/next.svg);
+   background-size: contain;
+}
