@@ -1,0 +1,30 @@
+.faq-container {
+    position: relative;
+    &::before {
+        display: block;
+        content: "";
+        width: 200px;
+        height: 200px;
+
+        position: absolute;
+        top: -5%;
+        right: 0;
+        z-index: -1;
+
+        background-image: url(../../img/background/faq.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+.faq-item {
+   padding: 20px 0;
+   &:not(:last-child) {
+      border-bottom: 1px solid var(--second-bgc);
+   }
+}
+
+.desc-faq {
+   font-size: 25px;
+   line-height: 1.14;
+}

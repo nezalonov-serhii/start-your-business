@@ -21,38 +21,53 @@
 }
 
 .price-befor {
+    position: relative;
+    padding-left: 30px;
    margin-bottom: 10px;
-
    font-size: 18px;
+   display: flex;
+   align-items: center;
+   &::before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translatey(-50%);
+      content: "";
+      width: 20px;
+      height: 20px;
+      background-image: url(../../img/chek.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      flex-shrink: 1;
+      flex-grow: -7;
+   }
 }
 
 .coast {
-
-    font-size: 18px;
-    color:#ABAABB;
+   font-size: 18px;
+   color: #abaabb;
 }
 
 .price-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
 }
 
 .mouth {
-    font-size: 40px;
+   font-size: 40px;
 }
 
-
 .pro-item {
-    position: relative;
+   position: relative;
 }
 
 .best-price {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    padding: 5px 15px;
-    border-radius: 5px;
+   position: absolute;
+   top: 15px;
+   right: 15px;
+   padding: 5px 15px;
+   border-radius: 5px;
 
-    background-color: var(--second-bgc);
+   background-color: var(--second-bgc);
 }

@@ -17,12 +17,11 @@ $(document).ready(function () {
 
       centerMode: true, //Поумолчанию false основной слайд становится поцентру
 
-      rows: 2,
 
       responsive: [
          //Адаптивка
          {
-            breakpoint: 480,
+            breakpoint: 400,
             settings: {
                slidesToShow: 2,
             },
@@ -30,7 +29,6 @@ $(document).ready(function () {
          {
             breakpoint: 1200,
             settings: {
-               autoplay: false,
                slidesToShow: 5,
                arrows: true,
             },
