@@ -698,7 +698,7 @@ body {
   top: -7%;
   left: 0;
   z-index: -1;
-  background-image: url(../../img/background/technologies-1.jpg);
+  background-image: url(../img/background/technologies-1.jpg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -716,7 +716,7 @@ body {
   top: 47%;
   left: 0;
   z-index: -1;
-  background-image: url(../../img/background/technologies-2.jpg);
+  background-image: url(../img/background/technologies-2.jpg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -767,6 +767,38 @@ body {
   border-radius: 10px;
 }
 
+.basic-item {
+  position: relative;
+}
+.basic-item::before {
+  position: absolute;
+  top: -50px;
+  left: -20px;
+  content: "";
+  width: 200px;
+  height: 200px;
+  z-index: -1;
+  background-image: url(../img/background/Price-1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.pro-item {
+  position: relative;
+}
+.pro-item::before {
+  position: absolute;
+  bottom: 50px;
+  right: -15px;
+  content: "";
+  width: 200px;
+  height: 200px;
+  z-index: -1;
+  background-image: url(../img/background/Price-2.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .price-title {
   margin-bottom: 15px;
   font-size: 25px;
@@ -793,14 +825,9 @@ body {
   content: "";
   width: 20px;
   height: 20px;
-  background-image: url(../../img/chek.svg);
+  background-image: url(../img/chek.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  -webkit-box-flex: -7;
-      -ms-flex-positive: -7;
-          flex-grow: -7;
 }
 
 .coast {
@@ -924,8 +951,21 @@ body {
 }
 
 .desc-faq {
+  position: relative;
   font-size: 25px;
   line-height: 1.14;
+  padding-left: 30px;
+}
+.desc-faq::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/dowland.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .press-wrap {
@@ -962,6 +1002,34 @@ body {
 
 .second-press-title {
   margin-bottom: 20px;
+}
+
+.contact-wrap {
+  position: relative;
+}
+.contact-wrap::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: -15px;
+  z-index: -1;
+  width: 250px;
+  height: 250px;
+  background-image: url(../../img/background/Price-1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.contact-wrap::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  right: -15px;
+  z-index: -1;
+  width: 250px;
+  height: 250px;
+  background-image: url(../../img/background/Price-2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 767px) {

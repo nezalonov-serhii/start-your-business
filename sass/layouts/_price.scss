@@ -14,6 +14,40 @@
    border-radius: 10px;
 }
 
+.basic-item {
+   position: relative;
+   &::before {
+   position: absolute;
+      top: -50px;
+      left: -20px;
+      content: "";
+      width: 200px;
+      height: 200px;
+      z-index: -1;
+      background-image: url(../img/background/Price-1.jpg);
+      background-repeat: no-repeat;
+      background-size: contain;
+
+   }
+}
+
+.pro-item {
+   position: relative;
+   &::before {
+   position: absolute;
+      bottom: 50px;
+      right: -15px;
+      content: "";
+      width: 200px;
+      height: 200px;
+      z-index: -1;
+      background-image: url(../img/background/Price-2.jpg);
+      background-repeat: no-repeat;
+      background-size: contain;
+
+   }
+}
+
 .price-title {
    margin-bottom: 15px;
 
@@ -35,11 +69,9 @@
       content: "";
       width: 20px;
       height: 20px;
-      background-image: url(../../img/chek.svg);
+      background-image: url(../img/chek.svg);
       background-repeat: no-repeat;
       background-size: contain;
-      flex-shrink: 1;
-      flex-grow: -7;
    }
 }
 

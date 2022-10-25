@@ -25,6 +25,20 @@
 }
 
 .desc-faq {
+   position: relative;
    font-size: 25px;
    line-height: 1.14;
+   
+   padding-left: 30px;
+   &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 25px;
+      height: 25px;
+      background-image: url(../img/dowland.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+   }
 }
