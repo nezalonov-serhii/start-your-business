@@ -11,9 +11,6 @@ $(document).ready(function () {
       // Autoplay
       autoplay: true, //Автопроигрывание по умвлчанию false
       autoplaySpeed: 1000,
-      pauseOnFocu: true,
-      pauseOnHover: true,
-      pauseOnDotsHover: true,
 
       centerMode: true, //Поумолчанию false основной слайд становится поцентру
 
