@@ -1015,7 +1015,7 @@ body {
   z-index: -1;
   width: 250px;
   height: 250px;
-  background-image: url(../../img/background/Price-1.jpg);
+  background-image: url(../img/background/Price-1.jpg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -1027,7 +1027,7 @@ body {
   z-index: -1;
   width: 250px;
   height: 250px;
-  background-image: url(../../img/background/Price-2.jpg);
+  background-image: url(../img/background/Price-2.jpg);
   background-size: contain;
   background-repeat: no-repeat;
 }
