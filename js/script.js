@@ -17,7 +17,6 @@ $(document).ready(function () {
 
       centerMode: true, //Поумолчанию false основной слайд становится поцентру
 
-
       responsive: [
          //Адаптивка
          {
@@ -31,6 +30,37 @@ $(document).ready(function () {
             settings: {
                slidesToShow: 5,
                arrows: true,
+            },
+         },
+      ],
+      mobileFirst: true,
+   });
+});
+
+$(document).ready(function () {
+   $(".slider-press").slick({
+      arrows: false,
+      dots: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      speed: 1500,
+      easing: "ease",
+      infinite: true,
+
+      autoplay: true,
+      autoplaySpeed: 2500,
+      pauseOnFocu: true,
+      pauseOnHover: true,
+      pauseOnDotsHover: true,
+
+      centerMode: true,
+
+      responsive: [
+         //Адаптивка
+         {
+            breakpoint: 768,
+            settings: {
+               slidesToShow: 2,
             },
          },
       ],

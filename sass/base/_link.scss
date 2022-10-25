@@ -39,7 +39,7 @@
     position: absolute;
     bottom: 0;
     transform: translate(-12%, 0);
-    transition: 250ms linear, transform 500ms ease-in-out 500ms
+    transition:  500ms ease-in-out;
 }
 
 .link-focus-footer:focus:before,
@@ -52,5 +52,4 @@
     position: absolute;
     bottom: 0;
     transform: translate(-12%, 0);
-    transition: 250ms linear, transform 500ms ease-in-out 500ms
 }

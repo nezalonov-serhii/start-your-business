@@ -1,0 +1,30 @@
+.press-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.btn-press {
+    min-width: 125px;
+}
+
+.press-title {
+    margin-bottom: 0;
+}
+
+.wrap-press-descr {
+    padding: 10px 15px;
+}
+
+.recommended {
+    display: inline-block;
+   margin-bottom: 15px; 
+   background-color: var(--second-bgc);
+   padding: 5px 15px;
+}
+
+.second-press-title {
+    margin-bottom: 20px;
+}
+

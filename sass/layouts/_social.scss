@@ -1,0 +1,20 @@
+.wrap-social {
+   margin-bottom: 20px;
+   @media screen and (min-width: 480px) {
+      display: flex;
+      justify-content: space-between;
+   }
+}
+
+.media-lists {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 15px;
+}
+
+.media-item {
+    width: calc((100% - 60px )/ 5);
+   @media screen and (max-width: 767px) {
+      width: calc((100% - 15px) / 2);
+   }
+}

@@ -1,0 +1,40 @@
+.reviews-cards {
+   background-color: rgba(255, 255, 255, 0.4);
+}
+
+.reviews-img {
+    width: 250px;
+    margin: 0 auto;
+    border-radius: 50%;
+    
+}
+
+.social-reviews {
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+}
+
+.reviews-icon {
+   width: 40px;
+   height: 40px;
+
+   fill: var(--title-color);
+}
+
+.social-reviews-item {
+   &:not(:last-child) {
+      margin-right: 10px;
+   }
+}
+
+.title-reviews {
+   font-size: 30px;
+   line-height: 1.66;
+}
+
+.desc-reviews {
+   font-size: 20px;
+   line-height: 1.4;
+}
+
