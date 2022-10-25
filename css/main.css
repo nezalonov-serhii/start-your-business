@@ -301,9 +301,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     position: absolute;
     top: 0;
     left: 0;
@@ -693,7 +690,7 @@ body {
 
 .video-iframe {
   width: 100%;
-  height: 60vh;
+  height: 40vw;
 }
 
 .technologies-list {
