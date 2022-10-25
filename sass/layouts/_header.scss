@@ -28,9 +28,10 @@
 }
 
 .nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+
    @media screen and (max-width: 767px) {
       position: absolute;
       top: 0;
@@ -39,9 +40,11 @@
       height: 100vh;
       padding: 40px 40px;
 
-      transform: translatex(100%);
       margin-top: -10px;
       background-color: #fff;
+
+      transform: translatex(100%);
+      transition: transform 250ms ease-in-out;
    }
 }
 
@@ -55,7 +58,7 @@
 
 .nav-link {
    font-size: 18px;
-   line-height: 1.40;
+   line-height: 1.4;
    color: var(--title-color);
 
    width: calc((100% - 60px) / 2);
