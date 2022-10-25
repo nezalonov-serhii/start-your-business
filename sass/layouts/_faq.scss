@@ -1,20 +1,27 @@
 .faq-container {
-    position: relative;
-    &::before {
-        display: block;
-        content: "";
-        width: 200px;
-        height: 200px;
+   position: relative;
+   &::before {
+      display: block;
+      content: "";
+      width: 200px;
+      height: 200px;
 
-        position: absolute;
-        top: -5%;
-        right: 0;
-        z-index: -1;
+      position: absolute;
+      top: -5%;
+      right: 0;
+      z-index: -1;
 
-        background-image: url(../../img/background/faq.jpg);
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
+      background-image: url(../../img/background/faq.jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      @media screen and (min-width: 768px) {
+         width: 400px;
+         height: 400px;
+
+         top: -37%;
+      }
+   }
 }
 
 .faq-item {
@@ -28,7 +35,7 @@
    position: relative;
    font-size: 25px;
    line-height: 1.14;
-   
+
    padding-left: 30px;
    &::before {
       position: absolute;

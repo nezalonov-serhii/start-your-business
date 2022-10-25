@@ -1,5 +1,10 @@
 .features-wrap {
    margin-bottom: 30px;
+
+   @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+   }
 }
 
 .features-lists {
@@ -22,6 +27,12 @@
       background-image: url(../img/background/features-1.jpg);
       background-repeat: no-repeat;
       background-size: contain;
+
+         @media screen and (min-width: 768px) {
+      top: 10%;
+      left: 0;
+   }
+
    }
 }
 
@@ -39,6 +50,8 @@
       background-image: url(../img/background/features-2.jpg);
       background-repeat: no-repeat;
       background-size: contain;
+
+
    }
 }
 
@@ -49,7 +62,7 @@
       width: 250px;
       height: 250px;
       position: absolute;
-      top: 30%;
+      top: 25%;
       right: 0;
       z-index: -1;
 
@@ -66,6 +79,11 @@
    border: 1px solid #fbfbff;
    box-shadow: 0px 4px 20px rgba(193, 193, 193, 0.3);
    border-radius: 10px;
+
+   @media screen and (min-width: 768px) {
+      width: calc((100% - 20px) / 2);
+   }
+
 }
 
 .features-item {

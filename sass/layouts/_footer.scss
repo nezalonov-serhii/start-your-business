@@ -1,18 +1,52 @@
 .footer {
+   position: relative;
    background-color: var(--title-color);
-   text-align: center;
 
+   @media screen and (max-width: 767px) {
+      text-align: center;
+   }
+
+   @media screen and (min-width: 768px) {
+      &::after {
+         content: "";
+         width: 300px;
+         height: 350px;
+         position: absolute;
+         top: 0;
+         right: 0;
+         background-image: url(../../img/background/spun-footer.png);
+         background-repeat: no-repeat;
+         background-size: contain;
+         z-index: 1;
+      }
+   }
+}
+
+.footer-container {
+   display: flex;
+   align-items: center;
 }
 
 .wraper-footer {
-   @media screen and (max-width: 479px) {
+   @media screen and (max-width: 767px) {
       margin-bottom: 50px;
+   }
+
+   @media screen and (min-width: 768px) {
+      margin-right: 120px;
    }
 }
 
 .footer-logo {
    width: 110px;
-   margin: 0 auto 20px auto;
+
+   @media screen and (max-width: 767px) {
+      margin: 0 auto 20px auto;
+   }
+
+   @media screen and (min-width: 768px) {
+      margin-bottom: 40px;
+   }
 }
 
 .address {
@@ -21,6 +55,10 @@
    gap: 10px;
    font-style: normal;
    margin-bottom: 10px;
+
+   @media screen and (min-width: 768px) {
+      margin-bottom: 120px;
+   }
 }
 
 .address-item {
@@ -30,27 +68,41 @@
 .wrap-footer {
    color: var(--button-color);
 
-   @media screen and (max-width: 479px) {
+   @media screen and (max-width: 767px) {
       margin-bottom: 20px;
    }
 }
 
+.footer-lists {
+   border-top: solid 2px var(--second-bgc);
+   border-bottom: solid 2px var(--second-bgc);
+   width: 100%;
+}
+
 .not-mobile {
-   @media screen and (max-width: 479px) {
+   @media screen and (max-width: 1199px) {
       display: none;
    }
 }
 
 .social-footer {
-   @media screen and (max-width: 479px) {
+   padding: 40px 0;
+   @media screen and (max-width: 767px) {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
    }
+
+   @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      width: 120%;
+   }
 }
 
 .footer-item {
-   @media screen and (max-width: 479px) {
+   @media screen and (max-width: 767px) {
       display: flex;
       justify-content: center;
       width: calc((100% - 10px) / 2);

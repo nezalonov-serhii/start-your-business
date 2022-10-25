@@ -1,4 +1,13 @@
-.contact-wrap { 
+.contact-line-wrap {
+   margin-bottom: 20px;
+}
+
+.contact-title {
+   min-width: 230px;
+   margin-bottom: 0;
+}
+
+.contact-wrap {
    position: relative;
    &::before {
       content: "";
@@ -11,7 +20,6 @@
       background-image: url(../img/background/Price-1.jpg);
       background-size: contain;
       background-repeat: no-repeat;
-
    }
 
    &::after {
@@ -27,18 +35,49 @@
       background-repeat: no-repeat;
 
    }
+
+   @media screen and (min-width: 768px) {
+         display: flex;
+         
+      }
+}
+
+.contact-dsc-wrap {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: end;
+   width: 40%;
+   margin-right: 50px;
+
+   &::before {
+      content: "*";
+      position: absolute;
+      bottom: 150px;
+      left: -10px;
+   }
+
+   @media screen and (max-width: 767px) {
+      display: none;
+   }
+
 }
 
 .contact-desc {
+margin-bottom: 20px;
+}
+
+.contact-post-desc {
+line-height: 1.4;
+color: #ABAABB;
+   
    @media screen and (max-width: 767px) {
       display: none;
    }
 }
 
-.contact-post-desc {
-   @media screen and (max-width: 767px) {
-      display: none;
-   }
+.contact-form {
+   flex-grow: 1;
 }
 
 .form-lable {
@@ -84,5 +123,5 @@
 }
 
 .btn-form {
-    width: 100%;
+   width: 100%;
 }

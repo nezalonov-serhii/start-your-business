@@ -14,6 +14,14 @@
    border-radius: 10px;
 }
 
+.price-item {
+   width: 100%;
+
+      @media screen and (min-width:768px) {
+         width: calc((100% - 20px) / 2);
+      }
+}
+
 .basic-item {
    position: relative;
    &::before {
@@ -49,7 +57,7 @@
 }
 
 .price-title {
-   margin-bottom: 15px;
+   margin-bottom: 30px;
 
    font-size: 25px;
 }
@@ -73,6 +81,10 @@
       background-repeat: no-repeat;
       background-size: contain;
    }
+
+   &:last-of-type {
+      margin-bottom: 30px
+   }
 }
 
 .coast {
@@ -87,7 +99,7 @@
 }
 
 .mouth {
-   font-size: 40px;
+   font-size: 60px;
 }
 
 .pro-item {

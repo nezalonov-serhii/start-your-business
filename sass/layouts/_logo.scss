@@ -1,22 +1,29 @@
 .logo-section {
-    padding: 20px 0;
-    background-color: var(--second-bgc);
+   padding: 20px 0;
+   background-color: var(--second-bgc);
 }
 
 .logo-bgc {
-    position: relative;
-    background-color: var(--second-bgc);
+   position: relative;
+   background-color: var(--second-bgc);
 }
 
 .logo-lists {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    gap: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 1;
+   gap: 20px;
+
+   @media screen and (min-width: 768px) {
+      gap: 100px;
+   }
 }
 
 .logo-item {
    width: calc((100% - 90px) / 4);
-}
 
+   @media screen and (min-width: 768px) {
+      width: calc((100% - 300px) / 4);
+   }
+}
