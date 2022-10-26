@@ -1,12 +1,10 @@
 .logo-section {
    padding: 20px 0;
    background-color: var(--second-bgc);
+   position: relative;
+   z-index: -4;
 }
 
-.logo-bgc {
-   position: relative;
-   background-color: var(--second-bgc);
-}
 
 .logo-lists {
    display: flex;
@@ -18,6 +16,10 @@
    @media screen and (min-width: 768px) {
       gap: 100px;
    }
+
+   @media screen and (min-width: 1200px) {
+      gap: 200px;
+   }
 }
 
 .logo-item {
@@ -25,5 +27,9 @@
 
    @media screen and (min-width: 768px) {
       width: calc((100% - 300px) / 4);
+   }
+
+   @media screen and (min-width: 1200px) {
+      width: calc((100% - 600px) / 4);
    }
 }

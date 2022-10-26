@@ -1,5 +1,4 @@
 .page-header {
-   position: relative;
    padding-top: 10px;
    padding-bottom: 0px;
 }
@@ -7,12 +6,16 @@
 .header-logo {
    width: 110px;
    margin-right: 20px;
+   @media screen and (min-width: 1200px) {
+      width: 150px;
+   }
 }
 
 .header-wrap {
    display: flex;
    justify-content: space-between;
    align-items: center;
+   
 }
 
 .btn-menu {
@@ -20,12 +23,23 @@
    background-color: transparent;
 
    position: absolute;
-   top: -10px;
+   top: 0px;
    right: 0;
    z-index: 10;
 
    @media screen and (min-width: 768px) {
       display: none;
+      right: 20%;
+   }
+}
+
+.menu-open {
+   border: none;
+   background-color: transparent;
+
+   @media screen and (min-width: 768px) {
+      display: none;
+      right: 20%;
    }
 }
 
@@ -45,7 +59,7 @@
       margin-top: -10px;
       background-color: #fff;
 
-      transform: translatex(101%);
+      transform: translatex(100vw);
       transition: transform 250ms ease-in-out;
    }
 }
@@ -59,6 +73,11 @@
       margin-bottom: 40px;
       width: 260px;
    }
+
+   @media screen and (min-width: 1200px){
+      gap: 30px;
+      margin-right: 50px;
+   }
 }
 
 .nav-link {
@@ -66,13 +85,18 @@
    line-height: 1.4;
    color: var(--title-color);
 
-   width: calc((100% - 10px) / 2);
 
-   @media screen and (min-width: 480px) {
+
+
+   @media screen and (max-width: 768px) {
+         width: calc((100% - 10px) / 2);
+   }
+
+   @media screen and (min-width: 480px) and (max-width: 768px) {
       width: calc((100% - 20px) / 3);
    }
 
-   @media screen and (min-width: 768px) {
+   @media screen and (min-width: 768px) and (max-width: 1199px){
       width: calc((100% - 30px) / 4);
    }
 }

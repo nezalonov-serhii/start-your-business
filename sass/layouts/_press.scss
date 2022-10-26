@@ -5,6 +5,10 @@
     margin-bottom: 30px;
 }
 
+.press-list a {
+    color: currentColor;
+}
+
 .btn-press {
     min-width: 125px;
 }
@@ -19,6 +23,7 @@
 
 .recommended {
     display: inline-block;
+    border-radius: 5px;
    margin-bottom: 15px; 
    background-color: var(--second-bgc);
    padding: 5px 15px;

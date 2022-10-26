@@ -29,14 +29,6 @@
 .team-card {
    text-align: center;
 
-   @media screen and (min-width: 768px) {
-      height: 380px;
-   }
-
-   @media screen and (min-width: 1200px) {
-      min-height: 342px;
-   }
-
    & img {
     margin-bottom: 16px;
    }

@@ -28,11 +28,10 @@
       background-repeat: no-repeat;
       background-size: contain;
 
-         @media screen and (min-width: 768px) {
-      top: 10%;
-      left: 0;
-   }
-
+      @media screen and (min-width: 768px) {
+         top: 10%;
+         left: 0;
+      }
    }
 }
 
@@ -50,8 +49,6 @@
       background-image: url(../img/background/features-2.jpg);
       background-repeat: no-repeat;
       background-size: contain;
-
-
    }
 }
 
@@ -84,6 +81,9 @@
       width: calc((100% - 20px) / 2);
    }
 
+      @media screen and (min-width: 1200px) {
+      width: calc((100% - 40px) / 3);
+   }
 }
 
 .features-item {
@@ -98,7 +98,6 @@
 }
 
 .features-desc {
-   font-size: 20px;
    margin-bottom: 20px;
 }
 

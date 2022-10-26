@@ -1,35 +1,74 @@
+.numbers-section {
+   @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: space-between;
+   }
+}
+
 .numbers-lists {
-    position: relative;
-    &::after {
-        content: "";
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: -90px;
-        left: 0;
-        z-index: -1;
-        background-image: url(../img/background/in-numbers.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: top;
-    }
+   position: relative;
+   &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: -90px;
+      left: 0;
+      z-index: -1;
+      background-image: url(../img/background/in-numbers.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: top;
+   }
+
+   @media screen and (min-width: 1200px) {
+      width: 60%;
+      padding-top: 70px;
+
+      border-bottom: solid 2px var(--second-bgc);
+
+      &::after {
+         top: -100px;
+         left: -110%;
+
+         width: 120%;
+         height: 120%;
+      }
+   }
 }
 
 .numbers-item {
-    &:not(:last-of-type){
-        margin-bottom: 40px;
-    }
+   @media screen and (max-width: 1199px) {
+      &:not(:last-of-type) {
+         margin-bottom: 40px;
+      }
+   }
+
+   @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 0;
+      border-top: solid 2px var(--second-bgc);
+   }
+}
+
+.desc-wraper {
+   @media screen and (min-width: 1200px) {
+      width: 450px;
+   }
 }
 
 .numb-title {
-    margin-bottom: 10px;
+   font-size: 25px;
+   margin-bottom: 10px;
 }
 
 .numb-desc {
-    margin-bottom: 10px;
+   margin-bottom: 10px;
 }
 
 .number {
-    font-weight: 800;
-    font-size: 50px;
+   font-weight: 800;
+   font-size: 50px;
 }

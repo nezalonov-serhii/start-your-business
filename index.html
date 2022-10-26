@@ -21,6 +21,11 @@
             <div class="container header-wrap">
                 <a href="./index.html"><img src="./img/swipe-logo.svg" alt="logo" class="header-logo"></a>
                 <div class="menu-wrap">
+                    <button class="menu-open js-open-menu">
+                        <svg width="50px" height="50px" class="menu-icon">
+                            <use href="./img/symbol-defs.svg#icon-menu" class="open"></use>
+                        </svg>
+                    </button>
                     <nav class="nav js-menu-container">
                         <div class="link-wrap">
                             <a href="#about" class="nav-link link-focus">About</a>
@@ -34,11 +39,6 @@
                         </div>
                         <a href="#pricing" class="nav-btn btn-link">Buy now</a>
                     </nav>
-                    <button class="menu-open btn-menu js-open-menu">
-                        <svg width="50px" height="50px" class="menu-icon">
-                            <use href="./img/symbol-defs.svg#icon-menu" class="open"></use>
-                        </svg>
-                    </button>
                     <button class="menu-close btn-menu js-close-menu">
                         <svg width="50px" height="50px" class="menu-icon">
                             <use href="./img/symbol-defs.svg#icon-close-menu" class="close"></use>
@@ -51,12 +51,13 @@
         <section class="hero ">
             <div class="container">
                 <h1 class="hero-title">Accessible way to start your business</h1>
-                <div class="hero-wrap-descr">
-                    <h2 class="hero-desc second-title">Simple. Customizable. Stylish.</h2>
-                    <a href="#video" class="btn-hero btn-link">Get demo for free</a>
-                </div>
                 <div class="social-hero-wrap">
-                    <p class="more">watch full video</p>
+                    <div class="hero-wrap-descr">
+                        <h2 class="hero-desc second-title">Simple. Customizable. Stylish.</h2>
+                        <a href="#video" class="btn-hero btn-link">Get demo for free</a>
+                        <p class="more">watch full video</p>
+                    </div>
+
                     <ul class="hero-social list">
                         <li class="hero-item">
                             <a href="./" class="hero-link">
@@ -293,7 +294,7 @@
                 <li class="technologies-item">
                     <div class="line-wrap">
                         <div class="line"></div>
-                        <h3 class="technologies-position-title technologies-title">Reuse the sections</h3>
+                        <h3 class="technologies-position-title technologies-title right">Reuse the sections</h3>
                     </div>
                 </li>
 
@@ -325,7 +326,7 @@
         <div class="price-bgc">
             <div class="container">
                 <div class="line-wrap">
-                    <h2 class="title">Price plans</h2>
+                    <h2 class="title prime-price-title">Price plans</h2>
                     <div class="line"></div>
                 </div>
                 <ul class="price-lists list">
@@ -389,7 +390,7 @@
     <section class="team-section section" id="team">
         <div class="container">
             <div class="wrap-team">
-                <h2>
+                <h2 class="title">
                     Meet the team<br />
                     Want to join?
                 </h2>
@@ -487,36 +488,42 @@
             <ul class="slider-press press-lists list">
                 <li class="press-list">
                     <article>
-                        <img src="./img/press-1.jpg" alt="" />
-                        <div class="wrap-press-descr">
-                            <p class="recommended">Must to read</p>
-                            <h3 class="second-press-title">
-                                Newsletters template: blog posts, articles, features, sales
-                            </h3>
-                            <p class="more">read more</p>
-                        </div>
+                        <a href="./">
+                            <img src="./img/press-1.jpg" alt="" />
+                            <div class="wrap-press-descr">
+                                <p class="recommended">Must to read</p>
+                                <h3 class="second-press-title">
+                                    Newsletters template: blog posts, articles, features, sales
+                                </h3>
+                                <p class="more">read more</p>
+                            </div>
+                        </a>
                     </article>
                 </li>
 
                 <li class="press-list">
                     <article>
-                        <img src="./img/press-2.jpg" alt="" />
-                        <div class="wrap-press-descr">
-                            <p class="recommended">New</p>
-                            <h3 class="second-press-title">Nextgen - new temlate about games and industry</h3>
-                            <p class="more">read more</p>
-                        </div>
+                        <a href="./">
+                            <img src="./img/press-2.jpg" alt="" />
+                            <div class="wrap-press-descr">
+                                <p class="recommended">New</p>
+                                <h3 class="second-press-title">Nextgen - new temlate about games and industry</h3>
+                                <p class="more">read more</p>
+                            </div>
+                        </a>
                     </article>
                 </li>
 
                 <li class="press-list">
                     <article>
-                        <img src="./img/press-3.jpg" alt="" />
-                        <div class="wrap-press-descr">
-                            <p class="recommended">Must to read</p>
-                            <h3 class="second-press-title">Enigma Software for startups is the best choice</h3>
-                            <p class="more">read more</p>
-                        </div>
+                        <a href="./">
+                            <img src="./img/press-3.jpg" alt="" />
+                            <div class="wrap-press-descr">
+                                <p class="recommended">Must to read</p>
+                                <h3 class="second-press-title">Enigma Software for startups is the best choice</h3>
+                                <p class="more">read more</p>
+                            </div>
+                        </a>
                     </article>
                 </li>
             </ul>
@@ -591,7 +598,7 @@
                     <a href="https://goo.gl/maps/x4d9BRNhz3cu9QfM7" class="address-item" target="_blank"
                         rel="noreferrer noopener">Kyiv, Ukraine</a>
                     <a href="mailto:hello.craftengine@gmail.com" class="address-item" target="_blank"
-                        rel="noreferrer noopener">hello.craftengine@gmail.com</a>
+                        rel="noreferrer noopener">hello@gmail.com</a>
                 </address>
                 <div class="wrap-footer">
                     <p>&#169; Swipe. All rights reserved</p>
@@ -599,7 +606,7 @@
             </div>
             <ul class="footer-lists list">
                 <li class="not-mobile">
-                    <ul class="list">
+                    <ul class="social-footer list">
                         <li class="footer-item"><a href="#about" class="link-focus-footer">About</a></li>
                         <li class="footer-item"><a href="#features" class="link-focus-footer">Features</a></li>
                         <li class="footer-item"><a href="#pricing" class="link-focus-footer">Pricing</a></li>
@@ -608,7 +615,7 @@
                 </li>
 
                 <li class="not-mobile">
-                    <ul class="list">
+                    <ul class="social-footer list">
                         <li class="footer-item"><a href="#faq" class="link-focus-footer">FAQ</a></li>
                         <li class="footer-item"><a href="#feedback" class="link-focus-footer">Feedback</a></li>
                         <li class="footer-item"><a href="#blog" class="link-focus-footer">Blog</a></li>

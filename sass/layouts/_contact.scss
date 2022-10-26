@@ -3,7 +3,7 @@
 }
 
 .contact-title {
-   min-width: 230px;
+   min-width: 300px;
    margin-bottom: 0;
 }
 
@@ -33,13 +33,11 @@
       background-image: url(../img/background/Price-2.jpg);
       background-size: contain;
       background-repeat: no-repeat;
-
    }
 
    @media screen and (min-width: 768px) {
-         display: flex;
-         
-      }
+      display: flex;
+   }
 }
 
 .contact-dsc-wrap {
@@ -61,16 +59,21 @@
       display: none;
    }
 
+   @media screen and (min-width: 1200px) {
+      &::before {
+         bottom: 100px;
+      }
+   }
 }
 
 .contact-desc {
-margin-bottom: 20px;
+   margin-bottom: 20px;
 }
 
 .contact-post-desc {
-line-height: 1.4;
-color: #ABAABB;
-   
+   line-height: 1.4;
+   color: #abaabb;
+
    @media screen and (max-width: 767px) {
       display: none;
    }
