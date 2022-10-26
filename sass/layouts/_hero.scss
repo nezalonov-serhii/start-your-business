@@ -3,11 +3,6 @@
 }
 
 .hero-wrap {
-   position: relative;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-
    padding-top: 0;
    padding-bottom: 0;
 
@@ -33,6 +28,14 @@
          background-position: right top;
       }
    }
+}
+
+.wrap-animate {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 100vh;
 }
 
 .hero-title {
