@@ -332,6 +332,10 @@ body {
     padding: 40px 40px 80px 40px;
     margin-top: -10px;
     background-color: #fff;
+    background-image: url(../../img/background/in-numbers.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
     -webkit-transform: translatex(100vw);
             transform: translatex(100vw);
     -webkit-transition: -webkit-transform 250ms ease-in-out;
@@ -364,18 +368,13 @@ body {
 }
 
 .nav-link {
-  font-size: 18px;
   line-height: 1.4;
   color: var(--title-color);
 }
 @media screen and (max-width: 768px) {
   .nav-link {
     width: calc((100% - 10px) / 2);
-  }
-}
-@media screen and (min-width: 480px) and (max-width: 768px) {
-  .nav-link {
-    width: calc((100% - 20px) / 3);
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {

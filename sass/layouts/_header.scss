@@ -15,7 +15,6 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
-   
 }
 
 .btn-menu {
@@ -47,6 +46,7 @@
    display: flex;
    align-items: center;
    gap: 20px;
+
    @media screen and (max-width: 767px) {
       flex-direction: column;
       position: absolute;
@@ -55,9 +55,12 @@
       width: 100vw;
       height: 103vh;
       padding: 40px 40px 80px 40px;
-
       margin-top: -10px;
       background-color: #fff;
+      background-image: url(../../img/background/in-numbers.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: bottom;
 
       transform: translatex(100vw);
       transition: transform 250ms ease-in-out;
@@ -74,29 +77,22 @@
       width: 260px;
    }
 
-   @media screen and (min-width: 1200px){
+   @media screen and (min-width: 1200px) {
       gap: 30px;
       margin-right: 50px;
    }
 }
 
 .nav-link {
-   font-size: 18px;
    line-height: 1.4;
    color: var(--title-color);
 
-
-
-
    @media screen and (max-width: 768px) {
-         width: calc((100% - 10px) / 2);
+      width: calc((100% - 10px) / 2);
+      font-size: 30px;
    }
 
-   @media screen and (min-width: 480px) and (max-width: 768px) {
-      width: calc((100% - 20px) / 3);
-   }
-
-   @media screen and (min-width: 768px) and (max-width: 1199px){
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
       width: calc((100% - 30px) / 4);
    }
 }
